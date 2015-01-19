@@ -1,0 +1,12 @@
+{
+  "name": "LED",
+  "keywords": "",
+  "description": "LED TODO",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/SH3D/Arduino-LED"
+  },
+  "frameworks": "arduino",
+  "platforms": "atmelavr"
+}
