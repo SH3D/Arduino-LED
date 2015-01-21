@@ -1,3 +1,3 @@
 install:
-	-mkdir ~/pad/Arduino_Libraries/Console
-	rsync -av * ~/pad/Arduino_Libraries/Console/
+	-mkdir ~/pad/Arduino_Libraries/LED
+	rsync -av * ~/pad/Arduino_Libraries/LED/

@@ -46,6 +46,24 @@ void LED::loop() {
 			else 
 				digitalWrite(pin, inverted ? HIGH : LOW);
 			break;
+		case LED_SHORT_LONG:
+			if ((state % 12) == 0)
+				digitalWrite(pin, inverted ? LOW : HIGH);
+			else 
+				digitalWrite(pin, inverted ? HIGH : LOW);
+			break;
+		case LED_DOUBLE_LONG:
+			if ( ((state % 16) == 0) || ((state % 16) == 2) )
+				digitalWrite(pin, inverted ? LOW : HIGH);
+			else 
+				digitalWrite(pin, inverted ? HIGH : LOW);
+			break;
+		case LED_TRIPPLE_LONG:
+			if ( ((state % 20) == 0) || ((state % 20) == 2) || ((state % 20) == 4) ) 
+				digitalWrite(pin, inverted ? LOW : HIGH);
+			else 
+				digitalWrite(pin, inverted ? HIGH : LOW);
+			break;
 	}
 
 	state++;
