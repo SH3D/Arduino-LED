@@ -22,6 +22,7 @@ class LED {
 		void set(uint8_t m) { mode = m; state = 0; }
 		uint8_t get() { return mode; }
 		void begin();
+		void setInverted(bool i) { inverted = i; }
 		
 		LED(uint8_t _p, bool i = false) {pin = _p; inverted = i;}
 
