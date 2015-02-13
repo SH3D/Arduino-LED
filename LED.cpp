@@ -6,7 +6,15 @@ TODO
 #include <LED.h>
 
 void LED::begin() {
+	enable();
+}
+
+void LED::enable() {
 	pinMode(pin, OUTPUT);
+}
+
+void LED::disable() {
+	pinMode(pin, INPUT);
 }
 
 void LED::loop() {
