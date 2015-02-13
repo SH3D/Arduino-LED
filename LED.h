@@ -24,6 +24,7 @@ class LED {
 		void begin();
 		void disable();
 		void enable();
+		void setInverted(bool i) { inverted = i; }
 		
 		LED(uint8_t _p, bool i = false) {pin = _p; inverted = i;}
 

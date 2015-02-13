@@ -18,6 +18,7 @@ void LED::disable() {
 }
 
 void LED::loop() {
+	// XXX check rollover compatible (cast to uint32_t?)
 	if ( (millis() - last) < 100)
 		return;
 
